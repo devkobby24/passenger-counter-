@@ -1,38 +1,40 @@
-// initialize count to 0
-// listen for clicks on the increment button
-// increment the count variable when the button is clicked
-// change the count-el in the HTML to reflect the new count
-let countEl = document.getElementById("count-el")
-let saveEl = document.getElementById("save-el")
-let resetEl = document.getElementById("reset-el")
+let homeScoreBtnOne = document.getElementById("home-score-btn-1")
+let homeScoreBtnTwo = document.getElementById("home-score-btn-2")
+let homeScoreBtnThree = document.getElementById("home-score-btn-3")
+let homeStoreEl =document.getElementById("home-score")
+let homeScore = 0
 
-console.log(countEl)
 
-let count = 0
-
-function increment() {
-  count += 1
-  countEl.textContent = count
-  console.log(count)
-
+function increaseHomeScoreOne(){
+    homeScore += 1
+    homeStoreEl.textContent = homeScore
+}
+function increaseHomeScoreTwo(){
+    homeScore += 2
+    homeStoreEl.textContent = homeScore
+}
+function increaseHomeScoreThree(){
+    homeScore += 3
+    homeStoreEl.textContent = homeScore
 }
 
 
-function save() {
-  let counter = count + " - "
-  saveEl.textContent += counter
-  countEl.textContent = 0
-  count = 0
+let guestScoreBtnOne = document.getElementById("guest-score-btn-1")
+let guestScoreBtnTwo = document.getElementById("guest-score-btn-2")
+let guestScoreBtnThree = document.getElementById("guest-score-btn-3")
+let guestStoreEl =document.getElementById("guest-score")
+let guestScore = 0
 
-  console.log(count)
+
+function increaseGuestScoreOne(){
+    guestScore += 1
+    guestStoreEl.textContent = guestScore
 }
-
-
-
-
-
-
-
-
-
-
+function increaseGuestScoreTwo(){
+    guestScore += 2
+    guestStoreEl.textContent = guestScore
+}
+function increaseGuestScoreThree(){
+    guestScore += 3
+    guestStoreEl.textContent = guestScore
+}
